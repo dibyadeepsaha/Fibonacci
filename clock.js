@@ -1,5 +1,4 @@
 /* MIT License - Copyright (c) 2020 - Dibyadeep Saha */
-
 var d = new Date();
 var hrs = 0, mins = 0;
 var firstHour = d.getHours(), firstMinute = d.getMinutes(), firstTime = true;
@@ -7,7 +6,7 @@ var setHours = function(h, m) {
 switch (h) {
     case 0:
         $("#small-square-one, #small-square-two, #medium-square, #large-square, #largest-square").addClass("gray-square");
-        // TO DO: Add the gray class for remaining squares.
+        
         if (m > 0 && m <= 5) {
         $("#small-square-two").addClass("blue-square");
         }
@@ -1001,7 +1000,7 @@ switch (h) {
         $("#small-square-one").addClass("red-square");
         }
         break;
-    // TO BE CONTINUED FROM BELOW - #medium-square
+
     case 13:
         resetColors();
         $("#small-square-one").addClass("red-square");
